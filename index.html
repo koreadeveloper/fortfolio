@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+    <title>index.html</title>
+</head>
+<body>
+    <h1>Hello! Press F12 - Developer Mode</h1>
+
+<script>
+setInterval(function(){
+    var startTime = performance.now(), check, diff;
+    for (check = 0; check < 1500; check++){
+        console.log(check);
+        console.clear();
+      }
+    diff = performance.now() - startTime;
+    if (diff > 110){
+        window.location.href = 'https://www.youtube.com/watch?v=WwsOLVh7_1k/';
+return
+    }
+  }, 500);debugger
+</script>
+
+</body>
+</html>
